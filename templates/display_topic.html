@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Display From Database To Frontend</title>
+</head>
+<body>
+    <center>
+        <h1>Topic</h1>
+        <table border="5px">
+            <tr>
+                <th>Topic_Name</th>
+            </tr>
+            {% for i in topics %}
+                <tr>
+                    <th>{{i.topic_name}}</th>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Display From Database To Frontend</title>
+</head>
+<body>
+    <center>
+        <h1>Webpage</h1>
+        <table border="5px">
+            <tr>
+                <th>Topic_Name</th>
+                <th>Name</th>
+                <th>URL</th>
+            </tr>
+            {% for i in webpages %}
+                <tr>
+                    <th>{{i.topic_name}}</th>
+                    <th>{{i.name}}</th>
+                    <th>{{i.url}}</th>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
