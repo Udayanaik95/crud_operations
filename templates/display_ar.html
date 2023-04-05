@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Display From Database To Frontend</title>
+</head>
+<body>
+    <center>
+        <h1>Webpage</h1>
+        <table border="5px">
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+            {% for i in accessrecord %}
+                <tr>
+                    <th>{{i.name}}</th>
+                    <th>{{i.author}}</th>
+                    <th>{{i.date}}</th>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

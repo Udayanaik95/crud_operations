@@ -16,3 +16,9 @@ def display_webpage(request):
 
     return render(request,'display_webpage.html',context=d)
 
+def display_ar(request):
+    LOA=AccessRecord.objects.all()
+    
+    d={'accessrecord':LOA}
+
+    return render(request,'display_ar.html',context=d)
